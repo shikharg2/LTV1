@@ -1,0 +1,16 @@
+id,run_id,metric_name,expected_value,measured_value,status,scope
+d75a23bd-1649-4ace-9b51-07b584104323,7f78a098-d6d3-480a-8a78-ac4cd51170a8,upload_speed,15 mbps,0.0,FAIL,scenario
+7a9d3fef-42e4-4fef-a827-12cb2dde17a7,7f78a098-d6d3-480a-8a78-ac4cd51170a8,download_speed,15 mbps,0.0,FAIL,scenario
+51c67fd8-3a8e-431d-acff-2515dd95ca5e,7f78a098-d6d3-480a-8a78-ac4cd51170a8,jitter,15 ms,0.0,PASS,scenario
+39a9a5cb-c2f6-4b28-82f3-7cbbd2d4868c,7f78a098-d6d3-480a-8a78-ac4cd51170a8,latency,15 ms,0.0,FAIL,scenario
+5ab96b32-e994-457f-96ef-472b0830e4a8,bcefad74-07dd-44c0-ba65-ce48b635d37e,page_load_time,1 ms,2294.06,PASS,scenario
+d82cbab4-f697-4513-8910-ab0080b78fac,9b4964c6-d066-48fc-b03b-97e6b1954daa,upload_speed,15 mbps,0.0,FAIL,scenario
+6b4b80a7-9882-497d-91a9-7adb62fc738d,9b4964c6-d066-48fc-b03b-97e6b1954daa,download_speed,15 mbps,1.0499426568405552,FAIL,scenario
+3b74e01a-1c63-4c60-a1cb-c3628154ac3b,9b4964c6-d066-48fc-b03b-97e6b1954daa,jitter,15 ms,2.7473481811226463,PASS,scenario
+b55ae966-0ffe-4a81-8bfc-31dfdb6fdbc3,9b4964c6-d066-48fc-b03b-97e6b1954daa,latency,15 ms,0.0,FAIL,scenario
+21cb98f1-1540-4f94-97b0-d539aeda956b,d0e44599-87ce-4d8f-9898-29d8bf98599e,page_load_time,1 ms,2505.9929999992623,PASS,scenario
+a8c87f05-9dde-468c-b4f2-afcfaf866592,bff113a8-0595-4c8b-bd96-a7820a93c570,upload_speed,15 mbps,0.0,FAIL,scenario
+1510698c-779a-4762-a280-2c7466f95935,bff113a8-0595-4c8b-bd96-a7820a93c570,download_speed,15 mbps,0.0,FAIL,scenario
+93567814-0643-468f-9024-5aee95e03242,bff113a8-0595-4c8b-bd96-a7820a93c570,jitter,15 ms,0.0,PASS,scenario
+af303ca6-1c8f-4298-b66b-b8f0dd53ccf5,bff113a8-0595-4c8b-bd96-a7820a93c570,latency,15 ms,0.0,FAIL,scenario
+e9656dff-ee4c-4ea0-ba96-d6b648578595,0cca9e17-4441-4088-be33-6a9b74b8f729,page_load_time,1 ms,0.0,FAIL,scenario

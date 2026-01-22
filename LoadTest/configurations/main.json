@@ -1,0 +1,83 @@
+{
+  "global_settings": {
+    "report_path": "./results/speed_test/"
+  },
+  "scenarios": [
+    {
+        "id": "speed_test_public_server",
+        "description" : "Speed test results gathered from public server",
+        "enabled": true,
+        "protocol": "speed_test",
+        "schedule": {
+            "mode": "once",
+            "start_time": "immediate",
+            "interval_minutes" : 1,
+            "duration_hours" : 24
+        },
+        "parameters": {
+            "target_url" : ["speedtest.shinternet.ch:5209"],
+            "duration" : 5
+        },
+      "expectations": [  
+        {
+            "metric": "upload_speed",
+            "operator": "gte",
+            "value": 15,
+            "unit": "mbps",
+            "aggregation": "p99",
+            "evaluation_scope": "scenario"
+        },
+        {
+            "metric": "download_speed",
+            "operator": "gte",
+            "value": 15,
+            "unit": "mbps",
+            "aggregation": "p99",
+            "evaluation_scope": "scenario"
+        },
+        { 
+            "metric": "jitter",
+            "operator": "lte",
+            "value": 15,
+            "unit": "ms",
+            "aggregation": "p99",
+            "evaluation_scope": "scenario"
+        },
+        {
+            "metric": "latency",
+            "operator": "gte",
+            "value": 15,
+            "unit": "ms",
+            "aggregation": "p99",
+            "evaluation_scope": "scenario"
+        }
+      ]
+    },
+    {
+        "id": "web_browsing_test",
+        "description" : "Browsing different URL's on the web",
+        "enabled": true,
+        "protocol": "web_browsing",
+        "schedule": {
+            "mode": "once",
+            "start_time": "immediate",
+            "interval_minutes" : 1,
+            "duration_hours" : 0.1
+        },
+        "parameters": {
+            "target_url" : ["https://www.google.com","https://www.youtube.com"],
+            "headless" : true
+        },
+      "expectations": [  
+        {
+            "metric": "page_load_time",
+            "operator": "gte",
+            "value": 1,
+            "unit": "ms",
+            "aggregation": "p99",
+            "evaluation_scope": "scenario"
+        }
+      ]
+    }
+  ]
+}
